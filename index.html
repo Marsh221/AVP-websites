@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Visionary Pixel — Cinematic Digital Art Studio</title>
+  <meta name="description" content="Art Visionary Pixel (AVP) is a cinematic digital-art studio crafting dark fantasy, gothic, cosmic and donghua-inspired visual storytelling." />
+
+  <!-- Favicon: inline crimson monogram (replace with /assets/img/favicon.svg later if desired) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23070607'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-weight='700' font-size='38' fill='%23DC1A2E' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts are self-hosted in assets/fonts/ (Cinzel + Jost, SIL OFL) — no external requests -->
+  <link rel="preload" href="assets/fonts/cinzel-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Progressive enhancement flag: reveal animations only run when JS is available -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#works">Skip to gallery</a>
+
+  <!-- ======================= HEADER / NAVIGATION ======================= -->
+  <header class="site-header" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Art Visionary Pixel — home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-text">
+          <span class="brand-name">Art&nbsp;Visionary&nbsp;Pixel</span>
+          <span class="brand-sub">Cinematic Digital Art</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="site-nav" aria-label="Primary">
+        <a href="#works">Works</a>
+        <a href="#studio">Studio</a>
+        <a href="#commissions">Commissions</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-ghost btn-small" href="#commissions">Commission a Piece</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= HERO =======================
+         Composition: copy anchored lower-left, artwork large and dominant
+         on the right (full-bleed background on mobile). -->
+    <section class="hero">
+      <div class="hero-art" aria-hidden="true">
+        <!-- PLACEHOLDER ARTWORK — replace assets/img/hero-main.jpg with your own hero piece -->
+        <img src="assets/img/hero-main.jpg"
+             alt=""
+             fetchpriority="high" />
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-kicker">Cinematic Digital Art Studio</p>
+          <h1 class="hero-title">Art&nbsp;Visionary <span class="accent">Pixel</span></h1>
+          <p class="hero-lede">
+            Dark fantasy, gothic and cosmic worlds — and donghua-inspired heroes —
+            forged as cinematic digital artwork for key art, covers and collectors.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#works">View Featured Works</a>
+            <a class="btn btn-ghost" href="#commissions">Commission a Piece</a>
+          </div>
+          <p class="hero-meta">Dark&nbsp;Fantasy&nbsp;· Gothic&nbsp;· Cosmic&nbsp;· Donghua-Inspired</p>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#works" aria-label="Scroll to featured works">
+        <span class="scroll-cue-line" aria-hidden="true"></span>
+        <span class="scroll-cue-label">Enter the Gallery</span>
+      </a>
+    </section>
+
+    <!-- ======================= BRAND STATEMENT =======================
+         Replaces the old invented statistics ("240+ Works / 7 yrs / 30+ Clients").
+         A quiet full-width statement — no numbers, no metrics. -->
+    <section class="brand-statement" aria-label="Brand statement">
+      <div class="container statement-inner reveal">
+        <p class="statement-line">
+          <span class="statement-rule" aria-hidden="true"></span>
+          <span class="statement-text">Every world begins in darkness — <em>we give it a light worth remembering.</em></span>
+          <span class="statement-rule" aria-hidden="true"></span>
+        </p>
+        <p class="statement-sub">Art Visionary Pixel — cinematic digital art, one shadow at a time.</p>
+      </div>
+    </section>
+
+    <!-- ======================= FEATURED WORKS ======================= -->
+    <section class="works" id="works">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Featured Works</p>
+          <h2>Selected Works</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+          <p class="section-lead">
+            Placeholder pieces stand in below for the upcoming portfolio —
+            the framing, captions and layout are production&#8209;ready.
+          </p>
+        </header>
+
+        <div class="works-grid">
+
+          <div class="works-row">
+
+          <!-- ░░ WORK 01 — REPLACE ME ░░
+               Swap the src for your real piece, then update:
+               title, tag, caption note, alt text and the lightbox caption.
+               Filenames like work-01-your-title.jpg keep the gallery tidy. -->
+          <figure class="work work-tall reveal" data-title="The Ashen Crown">
+            <span class="placeholder-flag" aria-hidden="true">Replace&nbsp;Me</span>
+            <button class="work-frame" type="button"
+                    aria-label="View larger: The Ashen Crown (placeholder artwork)">
+              <!-- PLACEHOLDER ARTWORK -->
+              <img src="assets/img/work-01-ashen-crown.jpg"
+                   alt="Placeholder artwork: a fallen king on an obsidian throne, wrapped in drifting crimson embers." />
+            </button>
+            <figcaption class="work-caption">
+              <div class="work-caption-top">
+                <h3 class="work-title">The Ashen Crown</h3>
+                <span class="work-kind">Dark Fantasy · Character</span>
+              </div>
+              <p class="work-note">Placeholder piece — your artwork goes here.</p>
+            </figcaption>
+          </figure>
+
+          <!-- ░░ WORK 02 — REPLACE ME ░░ -->
+          <figure class="work work-lean reveal" data-title="Cathedral of Quiet Embers">
+            <span class="placeholder-flag" aria-hidden="true">Replace&nbsp;Me</span>
+            <button class="work-frame" type="button"
+                    aria-label="View larger: Cathedral of Quiet Embers (placeholder artwork)">
+              <!-- PLACEHOLDER ARTWORK -->
+              <img src="assets/img/work-02-cathedral.jpg"
+                   alt="Placeholder artwork: a silhouetted figure with a lantern inside a vast gothic cathedral lit by crimson glass." />
+            </button>
+            <figcaption class="work-caption">
+              <div class="work-caption-top">
+                <h3 class="work-title">Cathedral of Quiet Embers</h3>
+                <span class="work-kind">Gothic · Atmosphere</span>
+              </div>
+              <p class="work-note">Placeholder piece — your artwork goes here.</p>
+            </figcaption>
+          </figure>
+
+          </div><!-- /works-row -->
+
+          <!-- ░░ WORK 03 — REPLACE ME ░░ (wide piece, full-width showcase) -->
+          <figure class="work work-wide reveal" data-title="The Devourer of Stars">
+            <span class="placeholder-flag" aria-hidden="true">Replace&nbsp;Me</span>
+            <button class="work-frame" type="button"
+                    aria-label="View larger: The Devourer of Stars (placeholder artwork)">
+              <!-- PLACEHOLDER ARTWORK -->
+              <img src="assets/img/work-03-devourer.jpg"
+                   alt="Placeholder artwork: a titanic cosmic entity of black void and crimson light towering over a dying star." />
+            </button>
+            <figcaption class="work-caption">
+              <div class="work-caption-top">
+                <h3 class="work-title">The Devourer of Stars</h3>
+                <span class="work-kind">Cosmic Horror · Key Art</span>
+              </div>
+              <p class="work-note">Placeholder piece — your artwork goes here.</p>
+            </figcaption>
+          </figure>
+
+          <div class="works-row flip">
+
+          <!-- ░░ WORK 04 — REPLACE ME ░░ -->
+          <figure class="work work-lean reveal" data-title="Moonlit Sword Saint">
+            <span class="placeholder-flag" aria-hidden="true">Replace&nbsp;Me</span>
+            <button class="work-frame" type="button"
+                    aria-label="View larger: Moonlit Sword Saint (placeholder artwork)">
+              <!-- PLACEHOLDER ARTWORK -->
+              <img src="assets/img/work-04-sword-saint.jpg"
+                   alt="Placeholder artwork: a donghua-inspired sword saint in white and crimson robes trailing crimson qi beneath a full moon." />
+            </button>
+            <figcaption class="work-caption">
+              <div class="work-caption-top">
+                <h3 class="work-title">Moonlit Sword Saint</h3>
+                <span class="work-kind">Donghua-Inspired · Character</span>
+              </div>
+              <p class="work-note">Placeholder piece — your artwork goes here.</p>
+            </figcaption>
+          </figure>
+
+          <!-- ░░ WORK 05 — REPLACE ME ░░ -->
+          <figure class="work work-tall reveal" data-title="Wraith of the Black Orchard">
+            <span class="placeholder-flag" aria-hidden="true">Replace&nbsp;Me</span>
+            <button class="work-frame" type="button"
+                    aria-label="View larger: Wraith of the Black Orchard (placeholder artwork)">
+              <!-- PLACEHOLDER ARTWORK -->
+              <img src="assets/img/work-05-black-orchard.jpg"
+                   alt="Placeholder artwork: lantern wraiths drifting through a dead black orchard beneath a crimson aurora." />
+            </button>
+            <figcaption class="work-caption">
+              <div class="work-caption-top">
+                <h3 class="work-title">Wraith of the Black Orchard</h3>
+                <span class="work-kind">Dark Fantasy · Landscape</span>
+              </div>
+              <p class="work-note">Placeholder piece — your artwork goes here.</p>
+            </figcaption>
+          </figure>
+
+          </div><!-- /works-row -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= STUDIO STATEMENT ======================= -->
+    <section class="studio" id="studio">
+      <div class="container studio-inner reveal">
+        <header class="section-head align-left">
+          <p class="eyebrow">The Studio</p>
+          <h2>Cinematic worlds, rendered in light and shadow.</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+        </header>
+        <div class="studio-copy">
+          <p>
+            Art Visionary Pixel is a cinematic digital-art studio. Every piece is built
+            digitally — composed like a film frame, lit like a key shot, and finished
+            to gallery resolution.
+          </p>
+          <p>
+            The work lives in four territories: dark fantasy, gothic atmosphere,
+            cosmic scale, and the flowing energy of donghua-inspired storytelling.
+          </p>
+          <ul class="studio-chips" aria-label="Focus disciplines">
+            <li>Dark Fantasy</li>
+            <li>Gothic Horror</li>
+            <li>Cosmic Scale</li>
+            <li>Donghua-Inspired</li>
+            <li>Key Art &amp; Covers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= COMMISSIONS =======================
+         Sits directly after the gallery — tight rhythm, no dead vertical space.
+         Commissions are presented as CLOSED; no fake emails or booking links. -->
+    <section class="commissions" id="commissions">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Commissions</p>
+          <h2>Commission a Piece</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+          <p class="section-lead">
+            Custom artwork, built frame by frame. Commissions are currently
+            <strong>closed</strong> — the waitlist opens soon.
+          </p>
+        </header>
+
+        <div class="commission-grid">
+          <ol class="commission-steps reveal" aria-label="How commissioning works">
+            <li>
+              <span class="step-num" aria-hidden="true">01</span>
+              <div>
+                <h3>Brief</h3>
+                <p>Send your concept, references and the format you need.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num" aria-hidden="true">02</span>
+              <div>
+                <h3>Direction</h3>
+                <p>We lock composition, palette and mood together.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num" aria-hidden="true">03</span>
+              <div>
+                <h3>Creation</h3>
+                <p>The piece is rendered and refined in staged passes.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num" aria-hidden="true">04</span>
+              <div>
+                <h3>Delivery</h3>
+                <p>Final high-resolution files, plus web-ready exports.</p>
+              </div>
+            </li>
+          </ol>
+
+          <aside class="commission-card reveal" aria-label="Commission details">
+            <span class="status-pill" role="status">Currently closed — waitlist opens soon</span>
+            <h3>Every commission includes</h3>
+            <ul>
+              <li>Full commercial usage rights</li>
+              <li>High-resolution master file</li>
+              <li>Staged progress previews</li>
+              <li>Web &amp; print export packages</li>
+            </ul>
+            <p class="card-note">
+              No payment or booking is handled on this site yet. When commissions
+              open, this panel becomes the request form.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACT ======================= -->
+    <section class="contact" id="contact">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Start a Conversation</h2>
+        <p class="contact-lead">
+          Commission waitlist enquiries, collaborations and licensing —
+          reach out while channels are being set up:
+        </p>
+        <!-- PLACEHOLDER EMAIL — swap for your real address when ready -->
+        <a class="contact-mail" href="mailto:hello@artvisionarypixel.example">hello@artvisionarypixel.example</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-text">
+            <span class="brand-name">Art&nbsp;Visionary&nbsp;Pixel</span>
+            <span class="brand-sub">Cinematic Digital Art</span>
+          </span>
+        </a>
+        <p class="footer-tag">Dark fantasy · Gothic · Cosmic · Donghua-inspired visual storytelling.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer — explore">
+        <h3>Explore</h3>
+        <a href="#works">Featured Works</a>
+        <a href="#studio">Studio</a>
+        <a href="#commissions">Commissions</a>
+      </nav>
+
+      <div class="footer-col" aria-label="Footer — elsewhere">
+        <h3>Elsewhere</h3>
+        <!-- PLACEHOLDER LINKS — point these at your real ArtStation / Instagram / X profiles -->
+        <a href="#" aria-label="ArtStation (placeholder link)">ArtStation <span aria-hidden="true">↗</span></a>
+        <a href="#" aria-label="Instagram (placeholder link)">Instagram <span aria-hidden="true">↗</span></a>
+        <a href="#" aria-label="X / Twitter (placeholder link)">X / Twitter <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Art Visionary Pixel. All rights reserved.</p>
+      <p class="footer-placeholder-note">All artwork shown is placeholder imagery pending the official portfolio.</p>
+    </div>
+  </footer>
+
+  <!-- ======================= LIGHTBOX ======================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer" hidden>
+    <div class="lightbox-backdrop" data-lb-close></div>
+    <figure class="lightbox-body">
+      <img class="lightbox-img" src="" alt="" />
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-close" type="button" aria-label="Close viewer" data-lb-close>×</button>
+    <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Previous artwork">‹</button>
+    <button class="lightbox-arrow lightbox-next" type="button" aria-label="Next artwork">›</button>
+  </div>
+
+  <noscript>
+    <p class="noscript-note">JavaScript is disabled — the gallery is fully viewable; the enlarged viewer is unavailable.</p>
+  </noscript>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
