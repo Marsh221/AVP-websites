@@ -1,44 +1,36 @@
 # Art Visionary Pixel — AVP Studio Site
 
-Static one-page site for **Art Visionary Pixel (AVP)** — a cinematic digital-art
-studio focused on dark fantasy, gothic, cosmic and donghua-inspired visual
-storytelling.
-
-Black / crimson visual identity · premium gallery aesthetic · fully responsive
-(desktop + mobile).
+A responsive, static portfolio site for **Art Visionary Pixel (AVP)**, focused on cinematic dark fantasy, gothic, cosmic and donghua-inspired digital art.
 
 ## Structure
 
-```
-index.html          — single-page site (nav, hero, brand statement, featured
-                      works gallery, studio, commissions, contact, footer, lightbox)
-css/style.css       — design tokens + all styling (sections are labelled 1–13)
-js/main.js          — sticky nav, mobile drawer, scroll reveal, gallery lightbox
-assets/img/         — artwork (ALL CURRENT IMAGES ARE PLACEHOLDERS)
-PLACEHOLDERS.md     — step-by-step guide for swapping in real portfolio pieces
-```
+- `index.html` — one-page site, featured gallery, commissions, contact and lightbox
+- `css/style.css` — layout, responsive styling and visual effects
+- `js/main.js` — navigation, scroll reveals and gallery lightbox
+- `assets/img/` — current header and featured gallery artwork
+- `assets/fonts/` — self-hosted fonts
+- `robots.txt` and `sitemap.xml` — search-engine files
 
 ## Run locally
 
-No build step. Either open `index.html` directly, or serve the folder:
+No build step is required. Open `index.html`, or run a local server:
 
 ```bash
-npx serve .        # or: python3 -m http.server 8080
+python3 -m http.server 8080
 ```
 
-## Editing notes
+## Updating artwork
 
-- **Artwork** — every image and project title is an intentional placeholder.
-  See `PLACEHOLDERS.md` for the swap checklist.
-- **Commission status** — presented as *closed* with a waitlist note; there are
-  deliberately no invented client counts, booking forms or fake social proof.
-- **Positioning** — AVP is described everywhere as a *cinematic digital-art
-  studio*; no wording implies traditional painting.
-- **Brand statement** — the old statistics strip ("240+ Works / 7 yrs Painting /
-  30+ Clients") was replaced by a quiet full-width brand statement.
+The live page references images in `assets/img/`. Keep those filenames unchanged when replacing artwork, or update the corresponding image paths in `index.html` and the social-sharing metadata in the document head.
 
-## Image credits
+Current featured images:
+- `hero-main.jpg`
+- `work-01-crimson-moon.jpg`
+- `work-02-screaming-void.jpg`
+- `work-03-phoenix-wide.jpg`
+- `work-04-beyond-form.jpg`
+- `work-05-black-beacon.jpg`
+- `work-06-apex-in-the-rain.jpg`
+- `work-07-from-above.jpg`
 
-All images in `assets/img/` are AI-generated stand-ins created purely to demo
-the layout. Replace them with your own licensed portfolio artwork before
-publishing.
+Keep the filenames and paths aligned with the HTML so the published gallery continues to load correctly.
