@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+<title id="title">Art Visionary Pixel emblem</title>
+<defs>
+ <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2dc"/><stop offset=".45" stop-color="#b9a18d"/><stop offset="1" stop-color="#f4e5d4"/></linearGradient>
+ <linearGradient id="crimson" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a90f22"/><stop offset="1" stop-color="#3a0610"/></linearGradient>
+</defs>
+<path d="M50 3 91 28 83 73 50 97 17 73 9 28Z" fill="none" stroke="url(#crimson)" stroke-width="2.2"/>
+<path d="M50 10 84 31 76 69 50 89 24 69 16 31Z" fill="none" stroke="#7b1421" stroke-width=".8"/>
+<path d="M50 17 57 40 80 47 57 54 50 78 43 54 20 47 43 40Z" fill="none" stroke="#7b1421" stroke-width="1"/>
+<text x="48" y="63" font-family="Georgia,serif" font-size="44" font-weight="bold" text-anchor="middle" fill="url(#silver)" stroke="#1c0a0c" stroke-width=".8">A</text>
+<path d="M61 38 82 21 72 43 62 49M39 38 18 21 28 43 38 49" fill="none" stroke="#8f1725" stroke-width="2" stroke-linecap="round"/>
+<path d="M50 4v10M50 86v10" stroke="#c52b3c" stroke-width="1.4"/>
+</svg>
