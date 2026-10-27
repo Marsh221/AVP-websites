@@ -958,3 +958,126 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   .hero-art img { animation: none; }
 }
+
+
+/* ---------- AVP homepage refinement: compact, curated, image-first ---------- */
+/* The existing monogram and wordmark remain the brand anchor. */
+.nav-inner { padding-block: 14px; }
+.brand { gap: 10px; }
+.brand-mark { width: 38px; height: 38px; }
+.brand-name { letter-spacing: .12em; }
+.brand-sub { letter-spacing: .22em; }
+
+/* Give the hero room to breathe without letting the artwork swallow the page. */
+.hero { min-height: min(820px, 92svh); }
+.hero-art { width: min(66vw, 980px); }
+.hero-art img { opacity: .78; }
+.hero-copy { max-width: 620px; }
+.hero-title { max-width: 11ch; font-size: clamp(2.7rem, 5.8vw, 5.15rem); }
+.hero-lede { max-width: 43ch; }
+.hero-actions { gap: 12px; }
+.btn { letter-spacing: .16em; padding: 13px 22px; }
+.btn-small { padding: 9px 15px; }
+
+@media (max-width: 900px) {
+  .hero { min-height: 82svh; }
+  .hero-art { width: 100%; }
+  .hero-inner { padding-block: 132px 100px; }
+  .hero-title { max-width: 12ch; }
+}
+@media (max-width: 520px) {
+  .brand-name { font-size: .82rem; letter-spacing: .08em; }
+  .brand-sub { font-size: .53rem; letter-spacing: .16em; }
+  .brand-mark { width: 34px; height: 34px; }
+  .hero { min-height: 78svh; }
+  .hero-inner { padding-block: 120px 84px; }
+  .hero-kicker { font-size: .62rem; letter-spacing: .25em; }
+  .hero-title { font-size: clamp(2.45rem, 12vw, 3.6rem); }
+  .hero-actions { align-items: stretch; flex-direction: column; max-width: 290px; }
+  .hero-actions .btn { text-align: center; }
+}
+
+/* A balanced thumbnail grid keeps the gallery browseable at a glance. */
+.works { padding-block: clamp(64px, 8vw, 112px); }
+.works-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(18px, 2.4vw, 30px); }
+.works-row, .works-row.flip { display: contents; }
+.work-tall .work-frame, .work-lean .work-frame { height: auto; aspect-ratio: 4 / 5; }
+.work-wide .work-frame { height: auto; aspect-ratio: 4 / 5; }
+.work-frame { cursor: zoom-in; }
+.work-frame::after { inset: 8px; }
+.work-frame img { object-fit: cover; }
+.work-caption { padding-top: 12px; }
+.work-caption-top { display: block; }
+.work-title { font-size: clamp(.94rem, 1.25vw, 1.12rem); line-height: 1.4; }
+.work-kind { display: block; margin-top: 5px; font-size: .58rem; letter-spacing: .16em; white-space: normal; }
+@media (max-width: 900px) {
+  .works-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 18px; }
+  .work-tall .work-frame, .work-lean .work-frame { height: auto; aspect-ratio: 4 / 5; }
+  .work-wide .work-frame { aspect-ratio: 4 / 5; }
+}
+@media (max-width: 520px) {
+  .works-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 12px; }
+  .work-frame::after { inset: 5px; }
+  .work-caption { padding-top: 9px; }
+  .work-title { font-size: .88rem; }
+  .work-kind { font-size: .52rem; letter-spacing: .1em; }
+}
+
+/* Reduced motion preferences: keep the experience comfortable and accessible. */
+@media (prefers-reduced-motion: reduce) {
+  .hero-art img, .scroll-cue-line { animation: none !important; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+
+
+/* ---------- AVP signature identity + final gallery polish ---------- */
+.brand-logo {
+  display: block;
+  width: clamp(38px, 4vw, 52px);
+  height: auto;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 0 9px rgba(155, 18, 38, .18));
+}
+.brand:hover .brand-logo { filter: drop-shadow(0 0 12px rgba(190, 27, 48, .38)); }
+.brand { align-items: center; }
+.brand-name { font-family: var(--font-display, Georgia, serif); }
+.site-header { backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.nav-links a:focus-visible, .btn:focus-visible, .work-frame:focus-visible, .brand:focus-visible {
+  outline: 2px solid #c52b3c;
+  outline-offset: 4px;
+}
+.works-grid { align-items: start; }
+.work { min-width: 0; margin: 0; }
+.work-frame {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(210, 190, 176, .18);
+  border-radius: 3px;
+  background: #100b0c;
+}
+.work-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform .55s cubic-bezier(.2,.7,.2,1), filter .55s ease;
+}
+.work-frame:hover img, .work-frame:focus-visible img {
+  transform: scale(1.035);
+  filter: saturate(1.08) contrast(1.04);
+}
+.work-frame::after { pointer-events: none; }
+.work-caption { min-height: 4.2rem; }
+.work-title { overflow-wrap: anywhere; }
+@media (min-width: 1200px) {
+  .works-grid { gap: 28px; }
+  .work-frame img { aspect-ratio: 4 / 4.7; }
+}
+@media (max-width: 520px) {
+  .brand-logo { width: 34px; }
+  .brand-name { font-size: .76rem; }
+  .brand-sub { font-size: .48rem; }
+  .work-caption { min-height: 4rem; }
+}
