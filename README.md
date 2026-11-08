@@ -20,6 +20,14 @@ A responsive, static portfolio site for **Art Visionary Pixel (AVP)**, focused o
 - Current cut: vertical cinematic fantasy short, 1080p MP4, 24 fps.
 - The final video asset still needs to be uploaded to a stable public URL before it can be embedded directly on the live website.
 
+## Published short-form work
+
+**A Signal From Beyond the Stars** is a cinematic UFO / cosmic-mystery short published to Instagram Reels, TikTok and YouTube Shorts on 8 November 2026. The creator confirmed publication.
+
+- [Read the project notes, publishing copy, platform record and website integration checklist](projects/signal-beyond-the-stars-ufo-short.md)
+- AI-assisted visuals with cinematic editing; the source video's existing audio was retained.
+- The Metricool-hosted media reference is documented in the project notes. The clean master MP4 and poster frame still need to be archived in the repository before website embedding.
+
 ## Run locally
 
 No build step is required. Open `index.html`, or run a local server:
