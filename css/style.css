@@ -1081,3 +1081,20 @@ h2 {
   .brand-sub { font-size: .48rem; }
   .work-caption { min-height: 4rem; }
 }
+
+
+/* ---------- Cinematic motion showcase ---------- */
+.motion { padding-block: clamp(64px, 8vw, 112px); background: #090708; }
+.motion-feature { width: min(100%, 760px); margin: 0 auto; }
+.motion-video {
+  display: block;
+  width: 100%;
+  max-height: 78vh;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  background: #030303;
+  border: 1px solid rgba(210, 190, 176, .18);
+  border-radius: 3px;
+}
+.motion-caption { padding-top: 16px; text-align: center; }
+.motion-caption p { margin: 10px auto 0; max-width: 56ch; color: rgba(235, 224, 218, .72); font-size: .9rem; line-height: 1.7; }
